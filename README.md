@@ -8,4 +8,6 @@ Lip region are localized and cropped to the center of images.
 Five semantics categories are annotated.
 Annotation conclude background(facial pixels), lip, teeth, tongue, inner cavity.
 
-Please contact me for the full dataset.
+![dataset](dataset.png)
+
+Please contact me (yangleisx@sjtu.edu.cn) for the full dataset.
