@@ -1,0 +1,4 @@
+weights/**.pth
+weights/**.dat
+**/__pycache__/**
+**/.DS_Store
