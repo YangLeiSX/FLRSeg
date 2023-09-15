@@ -4,7 +4,7 @@
 
 [Introduction](#Introduction) |
 [Preparation](#Preparation) |
-[Inference](#Speech-prediction) |
+[Inference](#Inference) |
 [License](#License)
 </div>
 
@@ -20,9 +20,9 @@ Using this repository, you can get fine-grained segmentation results of lip imag
 
 ## Demo
 
-<img src='demo/user7_fixed_5958_002_demo.png' title='vsr1' style='max-width:320px'></img>
+<img src='demo/user7_fixed_5958_002_demo.png' title='vsr1' style='width:60%'></img>
 
-<img src='demo/user9_fixed_0096_003_demo.png' title='vsr1' style='max-width:320px'></img>
+<img src='demo/user9_fixed_0096_003_demo.png' title='vsr2' style='width:60%'></img>
 
 ## Preparation
 
@@ -41,7 +41,9 @@ Using this repository, you can get fine-grained segmentation results of lip imag
 
 3. Download the pre-trained model from [here](https://pan.baidu.com/s/1cTsmuPvIn6ohuR1AW_MGcQ)(key: bj38).
 
-4. (optional) Crop lip images from face images.
+## Inference
+
+1. (optional) Crop lip images from face images.
 
     ```bash
     python crop_mouth.py
@@ -49,7 +51,7 @@ Using this repository, you can get fine-grained segmentation results of lip imag
         --output mouth.jpg
     ```
 
-5. Inference lip images.
+2. Inference lip images.
 
     ```bash
     python predict.py 
@@ -67,7 +69,7 @@ Facial images are selected from Visual Speaker Authentication (VSA) dataset. Lip
 
 Five semantics categories are annotated. Annotation conclude background(facial pixels), lip, teeth, tongue, inner cavity.
 
-<img src='demo/dataset.png' title='vsr1' style='max-width:320px'></img>
+<img src='demo/dataset.png' title='vsr1' style='width:60%'></img>
 
 Please contact me with academic/institutional email for the full dataset.
 
